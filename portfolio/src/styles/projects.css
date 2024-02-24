@@ -1,0 +1,74 @@
+.projects {
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    height: 72vh;
+    flex-direction: column;
+}
+
+.projects .title {
+    color: #04D3F7;
+    font-size: 3rem;
+    width: 100%;
+    padding: 3% 0;
+}
+
+.clarification {
+    font-size: 1.3rem;
+    color: rgb(182, 219, 230);
+    font-weight: normal;
+}
+
+.projects-area {
+    display: flex;
+    padding: 5%;
+}
+
+.text-area {
+    width: 50%;
+    color: rgb(182, 219, 230);
+}
+
+.image-area {
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    width: 50%;
+}
+
+.image-area img {
+    width: 70%;
+    box-shadow: 30px 30px 18px #04D3F7;
+    border-radius: 5px;
+}
+
+.long-photo {
+    width: 40%;
+    max-height: 380px;
+}
+
+.tech-stack {
+    width: 80%;
+    padding: 5%;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+.tech {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    background-color: rgb(0, 100, 0, 0.2);
+    border: solid rgb(0, 100, 0) 1px;
+    color: rgb(182, 219, 230);
+    border-radius: 15px;
+    width: 100px;
+    height: 40px;
+    text-align: center;
+}
+
+
+.tech:hover {
+    box-shadow: 5px 5px 15px rgb(0, 100, 0);
+}

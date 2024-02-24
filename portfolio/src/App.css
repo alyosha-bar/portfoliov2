@@ -1,0 +1,11 @@
+body {
+  background-color: #09192f;
+  /* overflow: hidden; */
+  overflow-x: hidden;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}

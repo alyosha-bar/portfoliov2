@@ -1,0 +1,64 @@
+
+.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    width: 100%;
+}
+
+
+.contact .text-area {
+    width: 50%;
+    padding: 5%;
+    padding-left: 15%;
+}
+
+.contact .title {
+    color: #04D3F7;
+    font-size: 3rem;
+    width: 100%;
+    padding: 3% 0;
+}
+
+.contact-text {
+    word-spacing: 4px;
+    letter-spacing: 1px;
+    font-size: 20px;
+}
+
+.form-area {
+    width: 50%;
+    padding: 5%;
+    padding-right: 15%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.half-area *{
+    width: 46%;
+}
+
+form input, textarea {
+    padding: 3%;
+    margin: 2%;
+    background-color: rgb(165, 165, 165);
+    border: none;
+    border-radius:5px;
+    color: black;
+}
+
+textarea {
+    min-width: 96%;
+    min-height: 25vh;
+    max-width: 96%;
+    max-height: 25vh;
+}
+
+.send-btn {
+    margin: 2%;
+    width: 96%;
+}
