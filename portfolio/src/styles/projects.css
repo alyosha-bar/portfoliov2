@@ -1,3 +1,58 @@
+
+
+.projects-card {
+    /* background-color: #17264B; */
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    color: white;
+    margin: 55px;
+    height: fit-content;
+    border-radius: 20px;
+}
+
+.projects-card:hover {
+    background-color: rgb(31, 47, 75, 0.5);
+    /* border: 0.1px white solid; */
+}
+
+.top-half {
+    height: 50%;
+}
+
+.top-half img {
+    width: 100%;
+    /* border-radius: 20px 20px 0px 0px; */
+    opacity: 0.5;
+}
+
+.project-link {
+    /* position: absolute;
+    transform: translate(-55px, 5px); */
+    color: black;
+    background-color: rgb(128, 128, 128, 0.5);
+}
+
+.project-link:hover {
+    background-color: rgb(128, 128, 128, 0.7);
+}
+
+.bottom-half {
+    height: 50%;
+    padding: 20px;
+}
+
+.title-group {
+    display: flex;
+    align-items: center;
+}
+
+.title {
+    padding: 15px 0px;
+}
+
+
+
 .projects {
     display: flex;
     justify-content:center;

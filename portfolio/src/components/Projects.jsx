@@ -7,6 +7,31 @@ import '../styles/projects.css'
 const Projects = () => {
     return ( 
         <div>
+            
+            <div className="newProjects">
+                <div className="projects-card">
+                    <div className="top-half">
+                        <img src={SchoolPhoto} alt="" />
+                    </div>
+                    <div className="bottom-half">
+                        <div className="title-group">
+                            <h3 className='title'> Music & Quotes Discord Bot </h3>
+                            <a className='project-link' href=""> LINK </a> 
+                        </div>
+                        <p> Simple discord bot that can play, pause and queue music, as well as save quotes to a 
+                            database. Can fetch quotes by user and word.
+                        </p>
+                        <ul className="tech-stack">
+                            <li className="tech"> <p> Python </p></li>
+                            <li className="tech"> <p> Discord Py </p> </li>
+                            <li className="tech"> <p> Spotify API </p> </li>
+                            <li className="tech"> <p> SQLite </p> </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+
             <div className="projects">
                 <div className="projects-area">
                     <div className="text-area">
