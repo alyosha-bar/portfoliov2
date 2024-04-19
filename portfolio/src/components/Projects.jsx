@@ -96,16 +96,16 @@ const Projects = () => {
                         </div>
                         <div className="bottom-half">
                             <div className="title-group">
-                                <h3 className='title'> Some New Projects </h3>
+                                <h3 className='title'> Personal Banking App </h3>
                                 <a className='project-link' href=""> <FontAwesomeIcon icon={faGithub}></FontAwesomeIcon> </a> 
                             </div>
                             <p> Desktop app for expense and savings tracking. Uses SQLite for Database and Python for the U.I. 
                                 As well as graphing libraries for better data visualization and a clear user experience.
                             </p>
                             <ul className="tech-stack">
-                                <li className="tech"> <p> Java </p></li>
-                                <li className="tech"> <p> Java Swing </p> </li>
-                                <li className="tech"> <p> MySql DB </p> </li>
+                                <li className="tech"> <p> Python </p></li>
+                                <li className="tech"> <p> SQLite </p> </li>
+                                <li className="tech"> <p> MatplotLib </p> </li>
                             </ul>
                         </div>
                     </div>
