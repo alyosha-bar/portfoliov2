@@ -1,40 +1,50 @@
+.projects-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+}
 
+.newProjects {
+    display: flex;  
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-left: 200px;
+}
 
 .projects-card {
     /* background-color: #17264B; */
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
     width: 300px;
     color: white;
-    margin: 55px;
+    margin: 20px 20px;
+    min-height: 500px;
     height: fit-content;
     border-radius: 20px;
-}
-
-.projects-card:hover {
     background-color: rgb(31, 47, 75, 0.5);
-    /* border: 0.1px white solid; */
 }
 
 .top-half {
     height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .top-half img {
-    width: 100%;
-    /* border-radius: 20px 20px 0px 0px; */
+    width: 90%;
+    padding-top: 15px;
+    border-radius: 15px;
     opacity: 0.5;
 }
 
 .project-link {
     /* position: absolute;
     transform: translate(-55px, 5px); */
-    color: black;
-    background-color: rgb(128, 128, 128, 0.5);
-}
-
-.project-link:hover {
-    background-color: rgb(128, 128, 128, 0.7);
+    color: white;
 }
 
 .bottom-half {
@@ -44,6 +54,7 @@
 
 .title-group {
     display: flex;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -51,63 +62,12 @@
     padding: 15px 0px;
 }
 
-
-
-.projects {
-    display: flex;
-    justify-content:center;
-    align-items:center;
-    height: 72vh;
-    flex-direction: column;
-}
-
-.projects .title {
-    color: #04D3F7;
-    font-size: 3rem;
-    width: 100%;
-    padding: 3% 0;
-}
-
-.clarification {
-    font-size: 1.3rem;
-    color: rgb(182, 219, 230);
-    font-weight: normal;
-}
-
-.projects-area {
-    display: flex;
-    padding: 5%;
-}
-
-.text-area {
-    width: 50%;
-    color: rgb(182, 219, 230);
-}
-
-.image-area {
-    display: flex;
-    justify-content:center;
-    align-items:center;
-    width: 50%;
-}
-
-.image-area img {
-    width: 70%;
-    box-shadow: 30px 30px 18px #04D3F7;
-    border-radius: 5px;
-}
-
-.long-photo {
-    width: 40%;
-    max-height: 380px;
-}
-
 .tech-stack {
-    width: 80%;
+    width: 100%;
     padding: 5%;
     list-style: none;
-    display: flex;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: auto auto;
 }
 
 .tech {
@@ -121,6 +81,7 @@
     width: 100px;
     height: 40px;
     text-align: center;
+    margin: 5px;
 }
 
 

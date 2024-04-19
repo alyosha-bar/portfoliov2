@@ -1,6 +1,8 @@
 import BlogPhoto from '../assets/BlogPhoto.png'
 import WorkoutPhoto from '../assets/WorkoutBuddyScreenshot.png'
 import SchoolPhoto from '../assets/School2.png'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faGithub } from '@fortawesome/free-brands-svg-icons'
 
 import '../styles/projects.css'
 
@@ -8,31 +10,110 @@ const Projects = () => {
     return ( 
         <div>
             
-            <div className="newProjects">
-                <div className="projects-card">
-                    <div className="top-half">
-                        <img src={SchoolPhoto} alt="" />
-                    </div>
-                    <div className="bottom-half">
-                        <div className="title-group">
-                            <h3 className='title'> Music & Quotes Discord Bot </h3>
-                            <a className='project-link' href=""> LINK </a> 
+            <div className="projects-container">
+                <div className="newProjects">
+                    <div className="projects-card">
+                        <div className="top-half">
+                            <img src={SchoolPhoto} alt="" />
                         </div>
-                        <p> Simple discord bot that can play, pause and queue music, as well as save quotes to a 
-                            database. Can fetch quotes by user and word.
-                        </p>
-                        <ul className="tech-stack">
-                            <li className="tech"> <p> Python </p></li>
-                            <li className="tech"> <p> Discord Py </p> </li>
-                            <li className="tech"> <p> Spotify API </p> </li>
-                            <li className="tech"> <p> SQLite </p> </li>
-                        </ul>
+                        <div className="bottom-half">
+                            <div className="title-group">
+                                <h3 className='title'> Music & Quotes Discord Bot </h3>
+                                <a className='project-link' href=""> <FontAwesomeIcon icon={faGithub}></FontAwesomeIcon> </a> 
+                            </div>
+                            <p> Simple discord bot that can play, pause and queue music, as well as save quotes to a 
+                                database. Can fetch quotes by user and word.
+                            </p>
+                            <ul className="tech-stack">
+                                <li className="tech"> <p> Python </p></li>
+                                <li className="tech"> <p> Discord Py </p> </li>
+                                <li className="tech"> <p> Youtube Download </p> </li>
+                                <li className="tech"> <p> SQLite </p> </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div className="projects-card">
+                        <div className="top-half">
+                            <img src={BlogPhoto} alt="" />
+                        </div>
+                        <div className="bottom-half">
+                            <div className="title-group">
+                                <h3 className='title'> Blog Application </h3>
+                                <a className='project-link' href=""> <FontAwesomeIcon icon={faGithub}></FontAwesomeIcon> </a> 
+                            </div>
+                            <p> Blog Application to host a client's blog. Allows users to make an account and for one user to 
+                                write new blog posts. Each blog post can have a photo gallery. Uses Firebase for data and file storage and React for the frontend.
+                            </p>
+                            <ul className="tech-stack">
+                                <li className="tech"> <p> React JS </p></li>
+                                <li className="tech"> <p> Firebase </p> </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div className="projects-card">
+                        <div className="top-half">
+                            <img src={WorkoutPhoto} alt="" />
+                        </div>
+                        <div className="bottom-half">
+                            <div className="title-group">
+                                <h3 className='title'> Workout Buddy </h3>
+                                <a className='project-link' href=""> <FontAwesomeIcon icon={faGithub}></FontAwesomeIcon> </a> 
+                            </div>
+                            <p> Website for users to be able to create workout plans for themselves and track their progress. 
+                                Allows for user authentication and authorization. PostgreSQL for DB,
+                                Express JS for API routes and React for the U.I. 
+                            </p>
+                            <ul className="tech-stack">
+                                <li className="tech"> <p> React JS </p></li>
+                                <li className="tech"> <p> Express JS </p> </li>
+                                <li className="tech"> <p> Node JS </p> </li>
+                                <li className="tech"> <p> PostgreSQL </p> </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div className="projects-card">
+                        <div className="top-half">
+                            <img src={SchoolPhoto} alt="" />
+                        </div>
+                        <div className="bottom-half">
+                            <div className="title-group">
+                                <h3 className='title'> School Management System </h3>
+                                <a className='project-link' href=""> <FontAwesomeIcon icon={faGithub}></FontAwesomeIcon> </a> 
+                            </div>
+                            <p> Simple discord bot that can play, pause and queue music, as well as save quotes to a 
+                                database. Can fetch quotes by user and word.
+                            </p>
+                            <ul className="tech-stack">
+                                <li className="tech"> <p> Java </p></li>
+                                <li className="tech"> <p> Java Swing </p> </li>
+                                <li className="tech"> <p> MySql DB </p> </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div className="projects-card">
+                        <div className="top-half">
+                            <img src={SchoolPhoto} alt="" />
+                        </div>
+                        <div className="bottom-half">
+                            <div className="title-group">
+                                <h3 className='title'> Some New Projects </h3>
+                                <a className='project-link' href=""> <FontAwesomeIcon icon={faGithub}></FontAwesomeIcon> </a> 
+                            </div>
+                            <p> Desktop app for expense and savings tracking. Uses SQLite for Database and Python for the U.I. 
+                                As well as graphing libraries for better data visualization and a clear user experience.
+                            </p>
+                            <ul className="tech-stack">
+                                <li className="tech"> <p> Java </p></li>
+                                <li className="tech"> <p> Java Swing </p> </li>
+                                <li className="tech"> <p> MySql DB </p> </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
 
 
-            <div className="projects">
+            {/* <div className="projects">
                 <div className="projects-area">
                     <div className="text-area">
                         <h1 className="title"> Blog Application <span className='clarification'> Personal Project </span> </h1>
@@ -129,7 +210,7 @@ const Projects = () => {
                         <img src={SchoolPhoto} alt="" />
                     </div>
                 </div>
-            </div>
+            </div> */}
         </div>
      );
 }
