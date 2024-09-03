@@ -1,6 +1,9 @@
 import BlogPhoto from '../assets/BlogPhoto.png'
 import WorkoutPhoto from '../assets/WorkoutBuddyScreenshot.png'
 import SchoolPhoto from '../assets/School2.png'
+import BotPhoto from '../assets/Bot.png'
+import FDMScreenshot from '../assets/FDMScreenshot.png'
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
 
@@ -10,16 +13,44 @@ const Projects = () => {
     return ( 
         <div>
             
+            
+
             <div className="projects-container">
+
+            
+
                 <div className="newProjects">
+
                     <div className="projects-card">
                         <div className="top-half">
-                            <img src={SchoolPhoto} alt="" />
+                            <img src={FDMScreenshot} alt="" />
+                        </div>
+                        <div className="bottom-half">
+                            <div className="title-group">
+                                <h3 className='title'> Employee Portal </h3>
+                                <a className='project-link' href="https://github.qmul.ac.uk/ec22468/ecs506"> <FontAwesomeIcon icon={faGithub}></FontAwesomeIcon> </a> 
+                            </div>
+                            <p> Web App made for a client company as part of a group project. Facilitated communication, document exchange, user authorization 
+                                and authentication. Used React, Node JS, Express and PostgreSQL, as well as, Firebase for file storage. 
+                            </p>
+                            <ul className="tech-stack">
+                                <li className="tech"> <p> React </p></li>
+                                <li className="tech"> <p> NodeJS </p> </li>
+                                <li className="tech"> <p> Express </p> </li>
+                                <li className="tech"> <p> PosgreSQL </p> </li>
+                                <li className="tech"> <p> Firebase </p> </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div className="projects-card">
+                        <div className="top-half">
+                            <img src={BotPhoto} alt="" />
                         </div>
                         <div className="bottom-half">
                             <div className="title-group">
                                 <h3 className='title'> Music & Quotes Discord Bot </h3>
-                                <a className='project-link' href=""> <FontAwesomeIcon icon={faGithub}></FontAwesomeIcon> </a> 
+                                <a className='project-link' href="https://github.com/alyosha-bar/Music-QuotesBot"> <FontAwesomeIcon icon={faGithub}></FontAwesomeIcon> </a> 
                             </div>
                             <p> Simple discord bot that can play, pause and queue music, as well as save quotes to a 
                                 database. Can fetch quotes by user and word.
@@ -39,7 +70,7 @@ const Projects = () => {
                         <div className="bottom-half">
                             <div className="title-group">
                                 <h3 className='title'> Blog Application </h3>
-                                <a className='project-link' href=""> <FontAwesomeIcon icon={faGithub}></FontAwesomeIcon> </a> 
+                                <a className='project-link' href="https://github.com/alyosha-bar/KarinaBlog"> <FontAwesomeIcon icon={faGithub}></FontAwesomeIcon> </a> 
                             </div>
                             <p> Blog Application to host a client's blog. Allows users to make an account and for one user to 
                                 write new blog posts. Each blog post can have a photo gallery. Uses Firebase for data and file storage and React for the frontend.
@@ -50,7 +81,8 @@ const Projects = () => {
                             </ul>
                         </div>
                     </div>
-                    <div className="projects-card">
+
+                    {/* <div className="projects-card">
                         <div className="top-half">
                             <img src={WorkoutPhoto} alt="" />
                         </div>
@@ -70,7 +102,8 @@ const Projects = () => {
                                 <li className="tech"> <p> PostgreSQL </p> </li>
                             </ul>
                         </div>
-                    </div>
+                    </div> */}
+                    
                     <div className="projects-card">
                         <div className="top-half">
                             <img src={SchoolPhoto} alt="" />
@@ -78,7 +111,7 @@ const Projects = () => {
                         <div className="bottom-half">
                             <div className="title-group">
                                 <h3 className='title'> School Management System </h3>
-                                <a className='project-link' href=""> <FontAwesomeIcon icon={faGithub}></FontAwesomeIcon> </a> 
+                                {/* <a className='project-link' href=""> <FontAwesomeIcon icon={faGithub}></FontAwesomeIcon> </a>  */}
                             </div>
                             <p> Simple discord bot that can play, pause and queue music, as well as save quotes to a 
                                 database. Can fetch quotes by user and word.
@@ -89,8 +122,10 @@ const Projects = () => {
                                 <li className="tech"> <p> MySql DB </p> </li>
                             </ul>
                         </div>
+                        
                     </div>
-                    <div className="projects-card">
+                    
+                    {/* <div className="projects-card">
                         <div className="top-half">
                             <img src={SchoolPhoto} alt="" />
                         </div>
@@ -108,7 +143,9 @@ const Projects = () => {
                                 <li className="tech"> <p> MatplotLib </p> </li>
                             </ul>
                         </div>
-                    </div>
+                    </div> */}
+
+
                 </div>
             </div>
 

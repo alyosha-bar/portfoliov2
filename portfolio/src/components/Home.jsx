@@ -26,7 +26,7 @@ const Home = () => {
                 </div>
                 <div className="detail-area">
                     <p className="long-description">
-                        I'm a second year Computer Science student with a keen interest in developing
+                        I'm a third year Computer Science student with a keen interest in developing
                         beautiful, useful and real-world web applications.
                     </p>
                     {/* <a href="../assets/CV.pdf" download='AleksejBarysnikov_CV'> */}
