@@ -1,58 +1,73 @@
-.projects {
+.projects-container {
     display: flex;
-    justify-content:center;
-    align-items:center;
-    height: 72vh;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+}
+
+.newProjects {
+    display: flex;  
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-left: 200px;
+}
+
+.projects-card {
+    /* background-color: #17264B; */
+    display: flex;
     flex-direction: column;
+    justify-content: space-around;
+    width: 300px;
+    color: white;
+    margin: 20px 20px;
+    min-height: 500px;
+    height: fit-content;
+    border-radius: 20px;
+    background-color: rgb(31, 47, 75, 0.5);
 }
 
-.projects .title {
-    color: #04D3F7;
-    font-size: 3rem;
-    width: 100%;
-    padding: 3% 0;
-}
-
-.clarification {
-    font-size: 1.3rem;
-    color: rgb(182, 219, 230);
-    font-weight: normal;
-}
-
-.projects-area {
+.top-half {
+    height: 50%;
     display: flex;
-    padding: 5%;
+    justify-content: center;
+    align-items: center;
 }
 
-.text-area {
-    width: 50%;
-    color: rgb(182, 219, 230);
+.top-half img {
+    width: 90%;
+    padding-top: 15px;
+    border-radius: 15px;
+    opacity: 0.5;
 }
 
-.image-area {
+.project-link {
+    /* position: absolute;
+    transform: translate(-55px, 5px); */
+    color: white;
+}
+
+.bottom-half {
+    height: 50%;
+    padding: 20px;
+}
+
+.title-group {
     display: flex;
-    justify-content:center;
-    align-items:center;
-    width: 50%;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.image-area img {
-    width: 70%;
-    box-shadow: 30px 30px 18px #04D3F7;
-    border-radius: 5px;
-}
-
-.long-photo {
-    width: 40%;
-    max-height: 380px;
+.title {
+    padding: 15px 0px;
 }
 
 .tech-stack {
-    width: 80%;
+    width: 100%;
     padding: 5%;
     list-style: none;
-    display: flex;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: auto auto;
 }
 
 .tech {
@@ -66,6 +81,7 @@
     width: 100px;
     height: 40px;
     text-align: center;
+    margin: 5px;
 }
 
 
