@@ -10,7 +10,7 @@
     justify-content: flex-start;
     flex-wrap: wrap;
     flex-direction: row;
-    margin-left: 200px;
+    margin: 5vh 13vw;
 }
 
 .projects-card {

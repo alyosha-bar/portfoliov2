@@ -1,8 +1,9 @@
 import BlogPhoto from '../assets/BlogPhoto.png'
-import WorkoutPhoto from '../assets/WorkoutBuddyScreenshot.png'
+import GoLangPhoto from '../assets/GolangImg.png'
 import SchoolPhoto from '../assets/School2.png'
 import BotPhoto from '../assets/Bot.png'
 import FDMScreenshot from '../assets/FDMScreenshot.png'
+
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
@@ -12,14 +13,27 @@ import '../styles/projects.css'
 const Projects = () => {
     return ( 
         <div>
-            
-            
-
             <div className="projects-container">
-
-            
-
                 <div className="newProjects">
+
+                    <div className="projects-card">
+                        <div className="top-half">
+                            <img src={GoLangPhoto} alt="" />
+                        </div>
+                        <div className="bottom-half">
+                            <div className="title-group">
+                                <h3 className='title'> Book Tracker Backend </h3>
+                                <a className='project-link' href="https://github.com/alyosha-bar/go-book-tracker"> <FontAwesomeIcon icon={faGithub}></FontAwesomeIcon> </a> 
+                            </div>
+                            <p> In the process of learning a Golang, I built a backend for a Book Tracker application. I use it myself to track books I have read as I am trying to read more. 
+                            </p>
+                            <ul className="tech-stack">
+                                <li className="tech"> <p> Golang </p></li>
+                                <li className="tech"> <p> Gin </p> </li>
+                                <li className="tech"> <p> SQLite </p> </li>
+                            </ul>
+                        </div>
+                    </div>
 
                     <div className="projects-card">
                         <div className="top-half">

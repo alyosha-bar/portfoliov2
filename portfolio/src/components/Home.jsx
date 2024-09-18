@@ -22,9 +22,10 @@ const Home = () => {
                 <div className="intro-title">
                     <span className="small"> Hello, my name is </span>
                     <h1 className="name"> Aleksej Barysnikov. </h1>
-                    <h2 className="short-description"> I am a Full-Stack Software Engineer </h2>
+                    <h2 className="short-description"> I am an aspring Backend Software Engineer </h2>
                 </div>
                 <div className="detail-area">
+                    { /* Change to be less vague */}
                     <p className="long-description">
                         I'm a third year Computer Science student with a keen interest in developing
                         beautiful, useful and real-world software solutions.
