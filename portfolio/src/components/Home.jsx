@@ -22,13 +22,13 @@ const Home = () => {
                 <div className="intro-title">
                     <span className="small"> Hello, my name is </span>
                     <h1 className="name"> Aleksej Barysnikov. </h1>
-                    <h2 className="short-description"> I am a Backend Software Engineer </h2>
+                    <h2 className="short-description"> I am a Full Stack Developer </h2>
                 </div>
                 <div className="detail-area">
                     { /* Change to be less vague */}
                     <p className="long-description">
                         I'm a third year Computer Science student with a keen interest in developing
-                        efficient, useful and real-world software solutions.
+                        efficient, useful and real-world software solutions. 
                     </p>
                     {/* <a href="../assets/CV.pdf" download='AleksejBarysnikov_CV'> */}
                         <button className="btn" onClick={onButtonClick}> Download My Resume </button>
@@ -36,7 +36,7 @@ const Home = () => {
                 </div>
             </div>
             <div className="about-img">
-                <img loading='lazy' src={ME} alt="" />
+                <img loading='lazy' src={ME} alt="personal image" />
             </div>
         </div>
      );

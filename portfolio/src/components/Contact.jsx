@@ -29,9 +29,7 @@ const Contact = () => {
         <div className="contact">
             <div className="text-area">
                 <h1 className="title"> Contact Me</h1>
-                <p className='contact-text'> I am interested in freelance opportunities, internships and part-time positions. 
-                    However, if you have other requests or questions, don't hesitate to contact me 
-                    using the form, and I will get back to you as soon as possible.</p>
+                <p className='contact-text'> If you have any questions about my experience, please reach out.I would love to speak with you.</p>
             </div>
             <div className="form-area">
                 <form ref={refForm} onSubmit={ sendEmail }>
