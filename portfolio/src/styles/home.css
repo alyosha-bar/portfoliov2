@@ -67,3 +67,29 @@
     /* animation: fadeIn 2s 1s;
     animation-fill-mode: forwards; */
 }
+
+
+.socials {
+    display: flex;
+    color: white;
+    width: 100%;
+    list-style-type: none;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.social {
+    scale: 1.5;
+}
+
+.social a {
+    color: white;
+}
+
+.social a:hover {
+    color: #04D3F7;
+}
+
+.social:hover {
+    transform: translateY(-2px);
+}

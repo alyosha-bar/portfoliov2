@@ -4,6 +4,9 @@ import ME from '../assets/ME.jpg'
 
 import pdfUrl from '../assets/CV.pdf'
 
+import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
 const Home = () => {
 
     const onButtonClick = () => {
@@ -33,6 +36,12 @@ const Home = () => {
                     {/* <a href="../assets/CV.pdf" download='AleksejBarysnikov_CV'> */}
                         <button className="btn" onClick={onButtonClick}> Download My Resume </button>
                     {/* </a> */}
+                </div>
+                <div className=''>
+                    <ul className='socials'>
+                        <li className='social'> <a href="https://github.com/alyosha-bar"> <FontAwesomeIcon icon={faGithub}></FontAwesomeIcon> </a> </li>
+                        <li className='social'> <a href="https://www.linkedin.com/in/aleksej-barysnikov-b93426255/"> <FontAwesomeIcon icon={faLinkedin}></FontAwesomeIcon> </a> </li>
+                    </ul>
                 </div>
             </div>
             <div className="about-img">
