@@ -6,7 +6,7 @@ const About = () => {
             <div className='about-text'>
                 {/* <h1 className='title'> About Me </h1>    */}
                 <p className="professional-summary">
-                    I am a Full-Stack Developer focused on combining well designed software architecture with beautifully designed frontends. I am experienced in building backend APIs in Javascript, Python and Golang. Additionally, I have participated in a variety of projects using modern web frameworks like React and Vue JS. 
+                    I am a Full-Stack Developer focused on combining well designed software architecture with beautifully designed frontends. I am experienced in building backend APIs in <span className='highlight'> Javascript, Python </span> and <span className='highlight'> Golang </span>. Additionally, I have participated in a variety of projects using modern web frameworks like <span className='highlight'> React </span> and Vue JS. 
                     <br />
                     <br />
                     I am currently working as a <span className='highlight'> Frontend Developer </span> in an early stage startup - <a href=""> Dustid </a>. In my work here I am focused on maintaining and modernising existing systems and contributing to the developement of new systems.

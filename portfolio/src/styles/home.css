@@ -94,7 +94,8 @@
 }
 
 .short-description {
-    font-size: 3rem;
+    padding: 15px 0;
+    font-size: 1.2rem;
     color: rgb(165, 165, 165);
 }
 
@@ -162,4 +163,26 @@
 .social a:hover {
     color: #04D3F7;
     transition: all 0.2s ease-in;
+}
+
+.tooltip {
+    visibility: hidden; /* Hidden by default */
+    position: absolute;
+    bottom: 100%; /* Position above the icon */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(125, 156, 179); /* Background */
+    color: white; /* Text color */
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 12px;
+    white-space: nowrap;
+    opacity: 0;
+    transition: opacity 0.2s ease-in;
+    margin-bottom: 5px;
+}
+
+.social:hover .tooltip {
+    visibility: visible;
+    opacity: 1; /* Fade in */
 }

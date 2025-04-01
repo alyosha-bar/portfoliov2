@@ -1,11 +1,9 @@
 import '../styles/home.css'
-
-import ME from '../assets/ME.jpg'
-
 import pdfUrl from '../assets/CV.pdf'
 
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faEnvelope, faMessage } from '@fortawesome/free-solid-svg-icons';
 import Experience from './Experience'
 import About from './About'
 import Projects from './Projects'
@@ -60,6 +58,9 @@ const Home = () => {
                 <div className="intro-title">
                     <h1 className="name"> Aleksej Barysnikov. </h1>
                     <h2 className="small"> Full Stack Developer </h2>
+                    <p className='short-description'>
+                        I build complex full-stack web applications.
+                    </p>
                 </div>
                 <div>
                 <nav className="side-nav">
@@ -76,12 +77,33 @@ const Home = () => {
                 </div>
                 <div className=''>
                     <ul className='socials'>
-                        <li className='social'> <a href="https://github.com/alyosha-bar"> <FontAwesomeIcon icon={faGithub}></FontAwesomeIcon> </a> </li>
-                        <li className='social'> <a href="https://www.linkedin.com/in/aleksej-barysnikov-b93426255/"> <FontAwesomeIcon icon={faLinkedin}></FontAwesomeIcon> </a> </li>
+                        <li className='social'>
+                            <a href="https://github.com/alyosha-bar">
+                                <FontAwesomeIcon icon={faGithub}></FontAwesomeIcon>
+                                <span className="tooltip"> GitHub </span>
+                            </a>
+                        </li>
                         
-                        <li className='social'> <a href="https://www.linkedin.com/in/aleksej-barysnikov-b93426255/"> <FontAwesomeIcon icon={faLinkedin}></FontAwesomeIcon> </a> </li>
+                        <li className='social'>
+                            <a href="https://www.linkedin.com/in/aleksej-barysnikov-b93426255/">
+                                <FontAwesomeIcon icon={faLinkedin}></FontAwesomeIcon>
+                                <span className="tooltip"> LinkedIn </span>
+                            </a>
+                        </li>
+                        
+                        <li className='social'>
+                            <a href="https://www.linkedin.com/in/aleksej-barysnikov-b93426255/">
+                                <FontAwesomeIcon icon={faEnvelope}></FontAwesomeIcon>
+                                <span className="tooltip"> Email </span>
+                            </a>
+                        </li>
 
-                        <li className='social'> <a href="https://www.linkedin.com/in/aleksej-barysnikov-b93426255/"> <FontAwesomeIcon icon={faLinkedin}></FontAwesomeIcon> </a> </li>
+                        <li className='social'> 
+                            <a href="">
+                                <FontAwesomeIcon icon={faMessage}></FontAwesomeIcon>
+                                <span className="tooltip"> Blog </span>
+                            </a>
+                        </li>
                         
                         
                         <li>
@@ -91,9 +113,9 @@ const Home = () => {
                 </div>
             </div>
             <div className='static'>
-                <div  id="about" className="section"><About/></div>
-                <div  id="experience" className="section"><Experience/></div>
-                <div  id="projects" className="section"><Projects/></div>
+                <div id="about" className="section"><About/></div>
+                <div id="experience" className="section"><Experience/></div>
+                <div id="projects" className="section"><Projects/></div>
             </div>
         </div>
         
