@@ -20,7 +20,69 @@
     position: fixed; /* Keeps it in place */
     left: 0;
     top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
+
+/* Sidebar Navigation */
+.side-nav {
+    display: flex;
+    flex-direction: column;
+    color: rgba(148, 145, 145, 0.416);
+    justify-self: flex-start;
+    align-items: flex-start;
+    font-size: 1.3rem;
+  }
+  
+  
+  /* Active State */
+  .active {
+    /* font-weight: bold; */
+    color: white;
+  }
+  
+  .active::before {
+    width: 80px !important; /* Keep line expanded for active item */
+    background-color: white;
+  }
+
+/* .side-nav {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    justify-self: flex-start;
+    align-items: flex-start;
+    font-size: 1.3rem;
+} */
+
+.hover-line {
+    display: flex;
+    align-items: center;
+    position: relative;
+    gap: 10px;
+}
+
+.hover-line::before {
+    content: "";
+    width: 40px; 
+    height: 1px;
+    background-color: rgba(148, 145, 145, 0.416);
+    transition: width 0.3s ease-in-out;
+}
+
+.hover-line:hover::before {
+    width: 80px; 
+}
+
+.hover-line:hover {
+    cursor: pointer;
+}
+
+.hover-line.active::before {
+    background-color: white;
+}
+
 
 .small {
     color: #04D3F7;
@@ -28,7 +90,7 @@
 
 .name {
     color: rgb(182, 219, 230);
-    font-size: 4.5rem;
+    font-size: 3.5rem;
 }
 
 .short-description {
@@ -57,6 +119,7 @@
     font-size: 1.05rem;
     height: 40px;
     width: 200px;
+    transition: all 0.2s ease-in;
 }
 
 .btn:hover {
@@ -98,8 +161,5 @@
 
 .social a:hover {
     color: #04D3F7;
-}
-
-.social:hover {
-    transform: translateY(-2px);
+    transition: all 0.2s ease-in;
 }

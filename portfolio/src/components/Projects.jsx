@@ -23,7 +23,23 @@ const Projects = () => {
         description: "I developed a software to help other developers track their 3rd party API usage. Implemented a full-stack web application with an interactive dashboard for users to view insigths. Engineered integrations for most modern web frameworks.",
         techstack: ["React", "Node JS", "Express", "PostgreSQL"],
         link: "https://api-track.netlify.app/"
-    }]
+    },
+    {
+        id: 2,
+        title: "Android Privacy Data Tracking App",
+        description: "I developed an Android application which helps non-technical users analyse how apps on their phone use their sensitive data. I utilised an MVVM design pattern to write clean and testable code. Additionally, I implemnented a SpringBoot server to run Taint Analysis processes.",
+        techstack: ["Kotlin", "Java", "SpringBoot", "Jetpack"],
+        link: ""
+    },
+    {
+        id: 3,
+        title: "Employee Portal",
+        description: "I worked with a team of 8 developers to create a Employee Portal for FDM. The project was a full-stack web application which handled authentication, submission of HR and admin management issues. I was responsible to developing the backend infrastructure and database design.",
+        techstack: ["Node Js", "Express", "React", "PostgreSQL"],
+        link: ""
+    }
+
+]
 
     const openInNewTab = (url) => {
         window.open(url, "_blank", "noreferrer");
