@@ -2,8 +2,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 75vh;
+    height: 65vh;
     margin-top: 5vh;
+    width: 100%;
 }
 
 .about .title {
@@ -18,7 +19,7 @@
     align-items: center;
     justify-content: center;
     padding: 5%;
-    width: 95%;
+    /* width: 95%; */
 }
 
 .professional-summary {
@@ -33,5 +34,11 @@
 a {
     color: #04D3F7;
     text-decoration: none;
-    /* font-weight: bold; */
+    font-style: italic;
+    font-weight: bold;
+}
+
+.highlight {
+    color: #04D3F7;
+    font-weight: bold;
 }

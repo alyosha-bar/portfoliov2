@@ -1,16 +1,88 @@
 
 .home {
     display: flex;
-    justify-content:center;
-    align-items:center;
-    height: 75vh;
+    /* width: 30%; */
+}
+
+.static {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    flex: 1; /* Takes up remaining space */
+    padding: 20px;
+    margin-left: 40%; /* Prevents overlap with fixed static side */
 }
 
 .home-text {
     padding: 5%;
-    /* animation: fadeInUp 2s 1s;
-    animation-fill-mode: forwards; */
+    width: 40%;
+    height: 100vh;
+    position: fixed; /* Keeps it in place */
+    left: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
+
+/* Sidebar Navigation */
+.side-nav {
+    display: flex;
+    flex-direction: column;
+    color: rgba(148, 145, 145, 0.416);
+    justify-self: flex-start;
+    align-items: flex-start;
+    font-size: 1.3rem;
+  }
+  
+  
+  /* Active State */
+  .active {
+    /* font-weight: bold; */
+    color: white;
+  }
+  
+  .active::before {
+    width: 80px !important; /* Keep line expanded for active item */
+    background-color: white;
+  }
+
+/* .side-nav {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    justify-self: flex-start;
+    align-items: flex-start;
+    font-size: 1.3rem;
+} */
+
+.hover-line {
+    display: flex;
+    align-items: center;
+    position: relative;
+    gap: 10px;
+}
+
+.hover-line::before {
+    content: "";
+    width: 40px; 
+    height: 1px;
+    background-color: rgba(148, 145, 145, 0.416);
+    transition: width 0.3s ease-in-out;
+}
+
+.hover-line:hover::before {
+    width: 80px; 
+}
+
+.hover-line:hover {
+    cursor: pointer;
+}
+
+.hover-line.active::before {
+    background-color: white;
+}
+
 
 .small {
     color: #04D3F7;
@@ -18,11 +90,12 @@
 
 .name {
     color: rgb(182, 219, 230);
-    font-size: 4.5rem;
+    font-size: 3.5rem;
 }
 
 .short-description {
-    font-size: 3rem;
+    padding: 15px 0;
+    font-size: 1.2rem;
     color: rgb(165, 165, 165);
 }
 
@@ -47,6 +120,7 @@
     font-size: 1.05rem;
     height: 40px;
     width: 200px;
+    transition: all 0.2s ease-in;
 }
 
 .btn:hover {
@@ -88,8 +162,27 @@
 
 .social a:hover {
     color: #04D3F7;
+    transition: all 0.2s ease-in;
 }
 
-.social:hover {
-    transform: translateY(-2px);
+.tooltip {
+    visibility: hidden; /* Hidden by default */
+    position: absolute;
+    bottom: 100%; /* Position above the icon */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(125, 156, 179); /* Background */
+    color: white; /* Text color */
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 12px;
+    white-space: nowrap;
+    opacity: 0;
+    transition: opacity 0.2s ease-in;
+    margin-bottom: 5px;
+}
+
+.social:hover .tooltip {
+    visibility: visible;
+    opacity: 1; /* Fade in */
 }

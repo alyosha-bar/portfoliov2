@@ -4,22 +4,17 @@ const About = () => {
     return ( 
         <div className="about">
             <div className='about-text'>
-                <h1 className='title'> About Me </h1>
+                {/* <h1 className='title'> About Me </h1>    */}
                 <p className="professional-summary">
-                    My first interest in Computer Science came in school when I was learning the basics of OOP in Java,
-                    which opened me up to the fact that building applications was very attaintable. This
-                    launched a drive to build different projects and solve various challenging problems. This led
-                    me to pursue a degree in Computer Science at Queen Mary University of London and my desire to gain experience in the field of Software Engineering. 
+                    I am a Full-Stack Developer focused on combining well designed software architecture with beautifully designed frontends. I am experienced in building backend APIs in <span className='highlight'> Javascript, Python </span> and <span className='highlight'> Golang </span>. Additionally, I have participated in a variety of projects using modern web frameworks like <span className='highlight'> React </span> and Vue JS. 
                     <br />
                     <br />
-                    My priority right now is building more complex and unique projects that can demostrate my skills and gain real world experience 
-                    with internships and freelance work, while finishing my studies. The field I am most interested in is Web Development, as I am very interested in
-                    building Full-Stack Web Applications, utilising skills in both Frontend and Backend. I am also trying to hone my skills with frequent  
-                     <a href="https://github.com/alyosha-bar"> GitHub </a> contributions and constant personal projects.
+                    I am currently working as a <span className='highlight'> Frontend Developer </span> in an early stage startup - <a href=""> Dustid </a>. In my work here I am focused on maintaining and modernising existing systems and contributing to the developement of new systems.
                     <br />
                     <br />
-                    My life outside of programming involves a lot of sports, as I am a member of my University Volleyball team. I also play
-                    basketball socially in Uni every week.
+                    Additionally, I work as a <span className='highlight'> Full Stack Engineer </span>, developing my API tracking software for other developers. This software aims to aid developers track how much monthly usage they have consumed of a particular API and provide valuable insights through data visualisation.
+                    <br />
+                    <br />
                 </p>
             </div>
         </div>

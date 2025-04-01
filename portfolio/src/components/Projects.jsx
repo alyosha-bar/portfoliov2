@@ -13,59 +13,56 @@ import * as contentful from 'contentful'
 
 import '../styles/projects.css'
 import { useEffect, useState } from 'react'
+import { Link } from 'react-router-dom'
 
 const Projects = () => {
 
-    const space = import.meta.env.VITE_SPACE
-    const token = import.meta.env.VITE_CONTENTFUL_TOKEN
+    const projects = [{
+        id: 1,
+        title: "API-Track",
+        description: "I developed a software to help other developers track their 3rd party API usage. Implemented a full-stack web application with an interactive dashboard for users to view insigths. Engineered integrations for most modern web frameworks.",
+        techstack: ["React", "Node JS", "Express", "PostgreSQL"],
+        link: "https://api-track.netlify.app/"
+    },
+    {
+        id: 2,
+        title: "Android Privacy Data Tracking App",
+        description: "I developed an Android application which helps non-technical users analyse how apps on their phone use their sensitive data. I utilised an MVVM design pattern to write clean and testable code. Additionally, I implemnented a SpringBoot server to run Taint Analysis processes.",
+        techstack: ["Kotlin", "Java", "SpringBoot", "Jetpack"],
+        link: ""
+    },
+    {
+        id: 3,
+        title: "Employee Portal",
+        description: "I worked with a team of 8 developers to create a Employee Portal for FDM. The project was a full-stack web application which handled authentication, submission of HR and admin management issues. I was responsible to developing the backend infrastructure and database design.",
+        techstack: ["Node Js", "Express", "React", "PostgreSQL"],
+        link: ""
+    }
 
-    // set to env variables
-    const client = contentful.createClient({
-        space: space,
-        environment: 'master', // defaults to 'master' if not set
-        accessToken: token,
-    })
+]
 
-    const [projects, setProjects] = useState([])
-
-    useEffect( () => {
-        client.getEntries().then( (entries) => {
-            console.log(entries)
-            setProjects(entries.items)
-        }).catch( (err) => {
-            console.error(err)
-        })
-    }, [])
+    const openInNewTab = (url) => {
+        window.open(url, "_blank", "noreferrer");
+    };
 
 
     return ( 
         <div className='projects-wrapper'>
-            <div className="projects-container">
-                {/* <button onClick={test}> test content </button> */}
-
-                {projects && projects.map( (project) => (
-                    <div className="projects-card">
-                        {/* <button onClick={() => {console.log(project.fields)}}> Project </button> */}
-                        <div className="top-half">
-                            <img src={project.fields.thumbnail.fields.file.url} alt="" />
-                        </div>
-                        <div className="bottom-half">
-                            <div className="title-group">
-                                <h3 className='title'> {project.fields.title} </h3>
-                                <a className='project-link' href={`https://github.com/alyosha-bar/${project.fields.githubLink}`}> <FontAwesomeIcon icon={faGithub}></FontAwesomeIcon> </a> 
-                            </div>
-                            <p> {project.fields.description} 
-                            </p>
-                            <ul className="tech-stack">
-                                {project.fields.techstack.map( (tech) => (
-                                    <li className="tech"> <p> {tech} </p></li>
-                                ))}
-                                
-                            </ul>
-                        </div>
+            <h1 className="exp-title"> Projects </h1>
+            {projects.map((project) => (
+                <div className='project-card' key={project.id}>
+                    <div className='title-grp'>
+                        <h2>{project.title}</h2>
+                        <FontAwesomeIcon className='icon' onClick={() => openInNewTab(project.link)} icon={faGithub}></FontAwesomeIcon>
                     </div>
-                ))}
-            </div>
+                    <div> {project.description} </div>
+                    <ul className='tech-stack'>
+                        {project.techstack.map((tech) => (
+                            <li key={tech} className='tech'> {tech} </li>
+                        ))}
+                    </ul>
+                </div>
+            ))}
         </div>
      );
 }

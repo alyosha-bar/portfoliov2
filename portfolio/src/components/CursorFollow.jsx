@@ -1,4 +1,3 @@
-// CursorFollow.js
 import React, { useState, useEffect } from 'react';
 import '../styles/cursorfollow.css';
 
@@ -7,7 +6,7 @@ const CursorFollow = () => {
 
   useEffect(() => {
     const handleMouseMove = (e) => {
-      setPosition({ x: e.clientX, y: e.clientY });
+      setPosition({ x: e.pageX, y: e.pageY }); // 🔥 Use `pageX` and `pageY` instead
     };
 
     window.addEventListener('mousemove', handleMouseMove);
@@ -18,7 +17,7 @@ const CursorFollow = () => {
   }, []);
 
   return (
-    <div className="cursor" style={{ left: position.x, top: position.y }}></div>
+    <div className="cursor" style={{ left: `${position.x}px`, top: `${position.y}px` }}></div>
   );
 };
 
