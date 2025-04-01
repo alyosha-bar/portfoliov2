@@ -1,15 +1,25 @@
 
 .home {
     display: flex;
-    justify-content:center;
-    align-items:center;
-    height: 75vh;
+    /* width: 30%; */
+}
+
+.static {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    flex: 1; /* Takes up remaining space */
+    padding: 20px;
+    margin-left: 40%; /* Prevents overlap with fixed static side */
 }
 
 .home-text {
     padding: 5%;
-    /* animation: fadeInUp 2s 1s;
-    animation-fill-mode: forwards; */
+    width: 40%;
+    height: 100vh;
+    position: fixed; /* Keeps it in place */
+    left: 0;
+    top: 0;
 }
 
 .small {

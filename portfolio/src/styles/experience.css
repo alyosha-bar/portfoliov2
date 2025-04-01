@@ -1,0 +1,53 @@
+.experience-card {
+    display: flex;
+    padding: 30px 10px;
+    justify-content: space-around;
+    width: 85%;
+}
+
+.exp-title {
+    font-size: 3rem;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.experience-card:hover {
+    cursor: pointer;
+    /* border: 1px solid aqua; */
+    border-radius: 8px;
+    background-color: rgba(173, 169, 235, 0.1);
+    box-shadow: 6px 6px 30px 1px rgba(173, 169, 235, 0.1);
+    backdrop-filter: blur(30px);
+    transition: all 0.2s ease-in-out;
+}
+
+.experience-card h2 {
+    padding-bottom: 5px;
+}
+
+
+.timeline {
+    color: rgb(153, 149, 149);
+    font-size: 1rem;
+}
+
+.description-side {
+    width: 60%;
+}
+
+.tech-used{
+    list-style: none;
+    padding: 20px;
+    padding-top: 25px;
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.tech-used li{
+    padding: 12px;
+    border-radius: 15px;
+    border: 0.05px solid green;
+    background-color: rgba(0, 128, 0, 0.521);
+}

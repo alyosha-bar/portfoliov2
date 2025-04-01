@@ -6,6 +6,9 @@ import pdfUrl from '../assets/CV.pdf'
 
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import Experience from './Experience'
+import About from './About'
+import Projects from './Projects'
 
 const Home = () => {
 
@@ -20,6 +23,7 @@ const Home = () => {
 
 
     return ( 
+        <>
         <div className="home">
             <div className="home-text">
                 <div className="intro-title">
@@ -44,10 +48,17 @@ const Home = () => {
                     </ul>
                 </div>
             </div>
-            <div className="about-img">
+            {/* <div className="about-img">
                 <img loading='lazy' src={ME} alt="personal image" />
+            </div> */}
+            <div className='static'>
+                <About/>
+                <Experience />
+                <Projects />
             </div>
         </div>
+        
+        </>
      );
 }
 
