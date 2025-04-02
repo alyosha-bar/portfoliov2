@@ -52,7 +52,7 @@ const Projects = () => {
             {projects.map((project) => (
                 <div className='project-card' key={project.id}>
                     <div className='title-grp'>
-                        <h2>{project.title}</h2>
+                        <h2 className='project-title'>{project.title}</h2>
                         <FontAwesomeIcon className='icon' onClick={() => openInNewTab(project.link)} icon={faGithub}></FontAwesomeIcon>
                     </div>
                     <div> {project.description} </div>
