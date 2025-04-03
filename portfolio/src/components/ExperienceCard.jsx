@@ -7,7 +7,7 @@ const ExperienceCard = ({timeline, title, location, description, techstack}) => 
             <div className="description-side">
                 <h2 > {title}, {location} </h2>
                 <div>{description}</div>
-                <ul className="tech-used">
+                <ul className="tech-stack">
                     {techstack.map((tech) => (
                         <li className="tech">{tech}</li>
                     ))}

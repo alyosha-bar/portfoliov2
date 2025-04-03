@@ -35,19 +35,3 @@
 .description-side {
     width: 60%;
 }
-
-.tech-used{
-    list-style: none;
-    padding: 20px;
-    padding-top: 25px;
-    display: flex;
-    justify-content: space-evenly;
-    width: 100%;
-}
-
-.tech-used li{
-    padding: 12px;
-    border-radius: 15px;
-    border: 0.05px solid green;
-    background-color: rgba(0, 128, 0, 0.521);
-}
