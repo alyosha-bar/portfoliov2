@@ -92,18 +92,18 @@ const Home = () => {
                         </li>
                         
                         <li className='social'>
-                            <a href="https://www.linkedin.com/in/aleksej-barysnikov-b93426255/">
+                            <a href="">
                                 <FontAwesomeIcon icon={faEnvelope}></FontAwesomeIcon>
-                                <span className="tooltip"> Email </span>
+                                <span className="tooltip"> alohahoy@gmail.com </span>
                             </a>
                         </li>
 
-                        <li className='social'> 
+                        {/* <li className='social'> 
                             <a href="">
                                 <FontAwesomeIcon icon={faMessage}></FontAwesomeIcon>
                                 <span className="tooltip"> Blog </span>
                             </a>
-                        </li>
+                        </li> */}
                         
                         
                         <li>
