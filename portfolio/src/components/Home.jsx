@@ -8,6 +8,7 @@ import Experience from './Experience'
 import About from './About'
 import Projects from './Projects'
 import { useEffect, useState } from 'react'
+import { Link } from 'react-router-dom';
 
 const Home = () => {
 
@@ -98,12 +99,12 @@ const Home = () => {
                             </a>
                         </li>
 
-                        {/* <li className='social'> 
-                            <a href="">
+                        <li className='social'> 
+                            <Link to="/blog">
                                 <FontAwesomeIcon icon={faMessage}></FontAwesomeIcon>
                                 <span className="tooltip"> Blog </span>
-                            </a>
-                        </li> */}
+                            </Link>
+                        </li>
                         
                         
                         <li>
