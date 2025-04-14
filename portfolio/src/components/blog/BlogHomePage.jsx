@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import BlogLinkCard from "./BlogLinkCard";
-
+import "../../styles/blog.css"
 
 const BlogHomePage = () => {
 
@@ -11,13 +11,17 @@ const BlogHomePage = () => {
 
     return ( 
         <div>
-            <BlogLinkCard />
-            <BlogLinkCard />
-            <BlogLinkCard />
-            <BlogLinkCard />
-            <BlogLinkCard />
-            <BlogLinkCard />
-            <Link to="/"> Home </Link>
+            <div className="link-container">
+                <Link className="back-link" to="/"> Home </Link>
+            </div>
+            <div className="blog-container">   
+                <BlogLinkCard />
+                <BlogLinkCard />
+                <BlogLinkCard />
+                <BlogLinkCard />
+                <BlogLinkCard />
+                <BlogLinkCard />
+            </div>
         </div>
      );
 }
