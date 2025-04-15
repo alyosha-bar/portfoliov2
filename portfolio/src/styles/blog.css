@@ -110,3 +110,62 @@
     color: #999;
   }
   
+
+
+/* Blog Entry */
+
+/* Base container for the article */
+.blog-entry {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    font-family: 'Georgia', serif;
+    line-height: 1.7;
+    color: #333;
+  }
+  
+  /* Title section */
+  .title-section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 8px;
+    color: #222;
+  }
+  
+  .title-section h3 {
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-bottom: 4px;
+    color: #666;
+  }
+  
+  .title-section p {
+    font-size: 0.9rem;
+    color: #999;
+    margin-bottom: 32px;
+  }
+  
+  /* Text blocks */
+  .text-block-one,
+  .text-block-two {
+    margin-bottom: 32px;
+  }
+  
+  .text-block-one p,
+  .text-block-two p {
+    font-size: 1.05rem;
+    text-align: justify;
+  }
+  
+  /* Image part */
+  .image-part {
+    text-align: center;
+    margin: 40px 0;
+  }
+  
+  .image-part img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.1);
+  }
+  
