@@ -1,13 +1,13 @@
 import { Link } from "react-router-dom";
 import "../../styles/blog.css"
 
-const BlogLinkCard = () => {
+const BlogLinkCard = ({id, title, description, date}) => {
     return ( 
-        <Link className="blog-card" to="/blog/2">
-            <h2 className="blog-card-title"> Blog Title! </h2>
+        <Link className="blog-card" to={`/blog/${id}`}>
+            <h2 className="blog-card-title"> {title} </h2>
 
             <p className="description">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde eos dicta illo quis aspernatur quam ab quo vitae, numquam hic. Non, dolorem.
+                {description}
             </p>
 
 
@@ -16,7 +16,7 @@ const BlogLinkCard = () => {
                     <li className="tag"> Node JS </li>
                     <li className="tag"> Golang </li>
                 </ul>
-                <div className="date"> 12.04.2025 </div>
+                <div className="date"> {date.toDate().toDateString()} </div>
             </div>
         </Link>
      );
