@@ -99,12 +99,12 @@ const Home = () => {
                             </a>
                         </li>
 
-                        <li className='social'> 
+                        {/* <li className='social'> 
                             <Link to="/blog">
                                 <FontAwesomeIcon icon={faMessage}></FontAwesomeIcon>
                                 <span className="tooltip"> Blog </span>
                             </Link>
-                        </li>
+                        </li> */}
                         
                         
                         <li>
