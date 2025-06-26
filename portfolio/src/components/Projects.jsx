@@ -1,24 +1,29 @@
-// import BlogPhoto from '../assets/BlogPhoto.png'
-// import GoLangPhoto from '../assets/GolangImg.png'
-// import SchoolPhoto from '../assets/School2.png'
-// import BotPhoto from '../assets/Bot.png'
-// import FDMScreenshot from '../assets/FDMScreenshot.png'
-
-
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
 
-import * as contentful from 'contentful'
 
 
 import '../styles/projects.css'
-import { useEffect, useState } from 'react'
-import { Link } from 'react-router-dom'
 
 const Projects = () => {
 
-    const projects = [{
+    const projects = [
+    {
         id: 1,
+        title: "Project Management Web App",
+        description: "I developed a software to help other developers track their 3rd party API usage. Implemented a full-stack web application with an interactive dashboard for users to view insigths. Engineered integrations for most modern web frameworks.",
+        techstack: ["Golang", "Gin", "React", "Typescript", "PostgreSQL"],
+        link: "https://github.com/alyosha-bar/trello-clone/"
+    },
+    {
+        id: 2,
+        title: "Developer Productivity (Desktop App)",
+        description: "I developed a desktop application to aid developers in organisation. Using OAuth Login I aim to integrate with the GitHub API to provide specific insights for the user.",
+        techstack: ["Golang", "Wails", "React", "Typescript", "SQLite"],
+        link: "https://github.com/alyosha-bar/dev-productivity"
+    },
+    {
+        id: 3,
         title: "API-Track",
         description: "I developed a software to help other developers track their 3rd party API usage. Implemented a full-stack web application with an interactive dashboard for users to view insigths. Engineered integrations for most modern web frameworks.",
         techstack: ["React", "Node JS", "Express", "PostgreSQL"],
@@ -36,7 +41,7 @@ const Projects = () => {
         title: "Employee Portal",
         description: "I worked with a team of 8 developers to create a Employee Portal for FDM. The project was a full-stack web application which handled authentication, submission of HR and admin management issues. I was responsible to developing the backend infrastructure and database design.",
         techstack: ["Node Js", "Express", "React", "PostgreSQL"],
-        link: ""
+        link: "https://github.qmul.ac.uk/ec22468/ecs506"
     }
 
 ]

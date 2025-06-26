@@ -6,6 +6,9 @@ import Projects from './components/Projects'
 import CursorFollow from './components/CursorFollow'
 import './App.css'
 import Contact from './components/Contact'
+import BlogHomePage from './components/blog/BlogHomePage'
+import BlogEntry from './components/blog/BlogEntry'
+import BlogForm from './components/add/BlogForm'
 
 function App() {
 
@@ -18,6 +21,9 @@ function App() {
         <Route path='/about' element={<About/>} />
         <Route path='/projects' element={<Projects/>} />
         <Route path='/contact' element={<Contact/>} />
+        <Route path='/blog' element={<BlogHomePage />} />
+        <Route path='/blog/:id' element={<BlogEntry />} />
+        <Route path='/add' element={<BlogForm />} />
       </Routes>
     </>
   )
