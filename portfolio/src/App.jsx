@@ -18,12 +18,12 @@ function App() {
       {/* <Navbar></Navbar> */}
       <Routes>
         <Route path='/' element={<Home/>} />
-        <Route path='/about' element={<About/>} />
+        {/* <Route path='/about' element={<About/>} />
         <Route path='/projects' element={<Projects/>} />
-        <Route path='/contact' element={<Contact/>} />
-        <Route path='/blog' element={<BlogHomePage />} />
+        <Route path='/contact' element={<Contact/>} /> */}
+        {/* <Route path='/blog' element={<BlogHomePage />} />
         <Route path='/blog/:id' element={<BlogEntry />} />
-        <Route path='/add' element={<BlogForm />} />
+        <Route path='/add' element={<BlogForm />} /> */}
       </Routes>
     </>
   )

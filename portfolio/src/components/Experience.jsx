@@ -7,7 +7,7 @@ const Experience = () => {
             <h1 className="exp-title"> Experience</h1>
             <ExperienceCard 
                 title="Frontend Developer" 
-                timeline="March 2025 - Present" 
+                timeline="March 2025 - July 2025" 
                 location={"Dustid"} 
                 description={"I joined Dustid, an early stage startup as a Frontend Developer, working on modernising current web systems using Vue JS. I worked in a self-paced and organised environment which helped me develop organisational and communication skills with my team. "} 
                 techstack={["Vue JS", "Node JS", "Shopify API"]}/>
