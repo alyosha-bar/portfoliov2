@@ -27,7 +27,7 @@ const Projects = () => {
         title: "API-Track",
         description: "I developed a software to help other developers track their 3rd party API usage. Implemented a full-stack web application with an interactive dashboard for users to view insigths. Engineered integrations for most modern web frameworks.",
         techstack: ["React", "Node JS", "Express", "PostgreSQL"],
-        link: "https://api-track.netlify.app/"
+        link: "https://api-track.dev/"
     },
     {
         id: 2,
