@@ -1,61 +1,128 @@
-.project-wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    margin-bottom: 200px;
+.projects-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 160px;
+  width: 100%;
 }
 
+.section-title {
+  width: 100%;
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #e5e5fa;
+  margin-bottom: 2rem;
+  letter-spacing: 0.5px;
+}
+
+
+/* Match experience-card spacing and hover */
 .project-card {
-    padding: 30px;
-    width: 80%;
+  width: 85%;
+  background: rgba(173, 169, 235, 0.04);
+  border: 1px solid rgba(173, 169, 235, 0.12);
+  border-radius: 14px;
+  padding: 48px 48px; /* ⬅️ increased horizontal padding */
+  margin-bottom: 1.5rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  transition: all 0.25s ease;
 }
 
 .project-card:hover {
-    cursor: pointer;
-    /* border: 1px solid aqua; */
-    border-radius: 8px;
-    background-color: rgba(173, 169, 235, 0.1);
-    box-shadow: 6px 6px 30px 1px rgba(173, 169, 235, 0.1);
-    backdrop-filter: blur(30px);
-    transition: all 0.2s ease-in-out;
+  transform: translateY(-4px);
+  background: rgba(173, 169, 235, 0.08);
+  box-shadow: 0 8px 25px rgba(173, 169, 235, 0.25);
+  cursor: pointer;
 }
 
-.project-card:hover > .title-grp > .project-title {
-    color: aqua;
-    transition: all 0.2s ease-in;
+/* Header */
+.project-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 10px;
 }
 
-.tech-stack {
-    padding: 20px;
-    color: white;
-    list-style: none;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+.project-main {
+  display: flex;
+  flex-direction: column;
 }
 
-.tech {
-    padding: 12px;
-    border-radius: 15px;
-    border: 0.05px solid aqua;
-    background-color: rgba(0, 255, 255, 0.147);
-    color: aqua;
+.project-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #e5e5fa;
+  margin-bottom: 4px;
+  transition: color 0.2s ease;
 }
 
-.title-grp {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 0;
+.project-card:hover .project-title {
+  color: aqua;
+}
+
+.project-location {
+  font-size: 0.95rem;
+  color: #bcbcd9;
+}
+
+/* Right-side meta (timeline + icon) */
+.project-meta {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.timeline {
+  font-size: 0.9rem;
+  color: rgba(180, 180, 195, 0.9);
+  font-weight: 500;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
 }
 
 .icon {
-    width: 25px;
-    height: 25px;
+  width: 26px;
+  height: 26px;
+  color: #bcbcd9;
+  transition: color 0.2s ease;
 }
 
 .icon:hover {
-    color: aqua;
-    transition: all 0.2s ease-in;
+  color: aqua;
+}
+
+/* Description & stack */
+.project-desc {
+  color: #bcbcd9;
+  font-size: 1rem;
+  line-height: 1.65;
+  margin-bottom: 12px;
+}
+
+.tech-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+}
+
+.tech {
+  background: rgba(173, 169, 235, 0.15);
+  color: #d7d7f7;
+  border-radius: 18px;
+  padding: 5px 14px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+  transition: all 0.2s ease;
+}
+
+.tech:hover {
+  background: rgba(173, 169, 235, 0.25);
+  color: #ffffff;
+  transform: translateY(-1px);
 }

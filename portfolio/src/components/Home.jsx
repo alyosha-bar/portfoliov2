@@ -3,12 +3,11 @@ import pdfUrl from '../assets/CV.pdf'
 
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faEnvelope, faMessage } from '@fortawesome/free-solid-svg-icons';
+import { faEnvelope, faFile } from '@fortawesome/free-solid-svg-icons';
 import Experience from './Experience'
 import About from './About'
 import Projects from './Projects'
 import { useEffect, useState } from 'react'
-import { Link } from 'react-router-dom';
 
 const Home = () => {
 
@@ -23,33 +22,33 @@ const Home = () => {
     };
 
     const sections = ["about", "experience", "projects"];
-  const [activeSection, setActiveSection] = useState("about");
+    const [activeSection, setActiveSection] = useState("about");
 
-  // Scroll to section on click
-  const handleScrollTo = (id) => {
-    document.getElementById(id).scrollIntoView({ behavior: "smooth" });
-  };
+    // Scroll to section on click
+    const handleScrollTo = (id) => {
+        document.getElementById(id).scrollIntoView({ behavior: "smooth" });
+    };
 
-  // Detect which section is in view
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            setActiveSection(entry.target.id);
-          }
+    // Detect which section is in view
+    useEffect(() => {
+        const observer = new IntersectionObserver(
+            (entries) => {
+                entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    setActiveSection(entry.target.id);
+                }
+                });
+            },
+            { threshold: 0.6 } // Adjust this value to trigger earlier/later
+        );
+
+        sections.forEach((id) => {
+            const section = document.getElementById(id);
+            if (section) observer.observe(section);
         });
-      },
-      { threshold: 0.6 } // Adjust this value to trigger earlier/later
-    );
 
-    sections.forEach((id) => {
-      const section = document.getElementById(id);
-      if (section) observer.observe(section);
-    });
-
-    return () => observer.disconnect();
-  }, []);
+        return () => observer.disconnect();
+    }, []);
 
 
     return ( 
@@ -60,7 +59,7 @@ const Home = () => {
                     <h1 className="name"> Aleksej Barysnikov. </h1>
                     <h2 className="small"> Full Stack Developer </h2>
                     <p className='short-description'>
-                        I build complex full-stack web applications.
+                        I build complex software applications.
                     </p>
                 </div>
                 <div>
@@ -95,7 +94,7 @@ const Home = () => {
                         <li className='social'>
                             <a href="">
                                 <FontAwesomeIcon icon={faEnvelope}></FontAwesomeIcon>
-                                <span className="tooltip"> alohahoy@gmail.com </span>
+                                <span className="tooltip"> aleksej.v.barysnikov@gmail.com </span>
                             </a>
                         </li>
 
@@ -107,8 +106,9 @@ const Home = () => {
                         </li> */}
                         
                         
-                        <li>
-                        <button className="btn" onClick={onButtonClick}> Download My Resume </button>
+                        <li className='social'>
+                            <button onClick={onButtonClick}> <FontAwesomeIcon icon={faFile}></FontAwesomeIcon> </button>
+                            <span className="tooltip"> Download CV </span>
                         </li>
                     </ul>
                 </div>

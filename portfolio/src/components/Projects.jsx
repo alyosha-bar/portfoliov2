@@ -8,26 +8,26 @@ import '../styles/projects.css'
 const Projects = () => {
 
     const projects = [
+    // {
+    //     id: 1,
+    //     title: "Project Management Web App",
+    //     description: "I developed a software to help other developers track their 3rd party API usage. Implemented a full-stack web application with an interactive dashboard for users to view insigths. Engineered integrations for most modern web frameworks.",
+    //     techstack: ["Golang", "Gin", "React", "Typescript", "PostgreSQL"],
+    //     link: "https://github.com/alyosha-bar/trello-clone/"
+    // },
+    // {
+    //     id: 2,
+    //     title: "Developer Productivity (Desktop App)",
+    //     description: "I developed a desktop application to aid developers in organisation. Using OAuth Login I aim to integrate with the GitHub API to provide specific insights for the user.",
+    //     techstack: ["Golang", "Wails", "React", "Typescript", "SQLite"],
+    //     link: "https://github.com/alyosha-bar/dev-productivity"
+    // },
     {
         id: 1,
-        title: "Project Management Web App",
-        description: "I developed a software to help other developers track their 3rd party API usage. Implemented a full-stack web application with an interactive dashboard for users to view insigths. Engineered integrations for most modern web frameworks.",
-        techstack: ["Golang", "Gin", "React", "Typescript", "PostgreSQL"],
-        link: "https://github.com/alyosha-bar/trello-clone/"
-    },
-    {
-        id: 2,
-        title: "Developer Productivity (Desktop App)",
-        description: "I developed a desktop application to aid developers in organisation. Using OAuth Login I aim to integrate with the GitHub API to provide specific insights for the user.",
-        techstack: ["Golang", "Wails", "React", "Typescript", "SQLite"],
-        link: "https://github.com/alyosha-bar/dev-productivity"
-    },
-    {
-        id: 3,
         title: "API-Track",
         description: "I developed a software to help other developers track their 3rd party API usage. Implemented a full-stack web application with an interactive dashboard for users to view insigths. Engineered integrations for most modern web frameworks.",
         techstack: ["React", "Node JS", "Express", "PostgreSQL"],
-        link: "https://api-track.netlify.app/"
+        link: "https://api-track.dev"
     },
     {
         id: 2,
@@ -52,24 +52,42 @@ const Projects = () => {
 
 
     return ( 
-        <div className='projects-wrapper'>
-            <h1 className="exp-title"> Projects </h1>
+        <div className="projects-wrapper">
+            <h1 className="section-title">Projects</h1>
+
             {projects.map((project) => (
-                <div className='project-card' key={project.id}>
-                    <div className='title-grp'>
-                        <h2 className='project-title'>{project.title}</h2>
-                        <FontAwesomeIcon className='icon' onClick={() => openInNewTab(project.link)} icon={faGithub}></FontAwesomeIcon>
+                <div className="project-card" key={project.id}>
+                <div className="project-header">
+                    <div className="project-main">
+                    <h2 className="project-title">{project.title}</h2>
+                    <p className="project-location">{project.location}</p>
                     </div>
-                    <div> {project.description} </div>
-                    <ul className='tech-stack'>
-                        {project.techstack.map((tech) => (
-                            <li key={tech} className='tech'> {tech} </li>
-                        ))}
-                    </ul>
+
+                    <div className="project-meta">
+                    <span className="timeline">{project.timeline}</span>
+                    <FontAwesomeIcon
+                        className="icon"
+                        onClick={() => openInNewTab(project.link)}
+                        icon={faGithub}
+                    />
+                    </div>
+                </div>
+
+                <p className="project-desc">{project.description}</p>
+
+                <ul className="tech-stack">
+                    {project.techstack.map((tech) => (
+                    <li key={tech} className="tech">
+                        {tech}
+                    </li>
+                    ))}
+                </ul>
                 </div>
             ))}
-        </div>
-     );
+            {/* <div> Visit Full Project Archive </div> */}
+            </div>
+
+    );
 }
  
 export default Projects;
