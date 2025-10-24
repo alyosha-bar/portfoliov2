@@ -29,20 +29,34 @@ const Projects = () => {
         techstack: ["React", "Node JS", "Express", "PostgreSQL"],
         link: "https://api-track.dev"
     },
+    // {
+    //     id: 2,
+    //     title: "Android Privacy Data Tracking App",
+    //     description: "I developed an Android application which helps non-technical users analyse how apps on their phone use their sensitive data. I utilised an MVVM design pattern to write clean and testable code. Additionally, I implemnented a SpringBoot server to run Taint Analysis processes.",
+    //     techstack: ["Kotlin", "Java", "SpringBoot", "Jetpack"],
+    //     link: ""
+    // },
     {
         id: 2,
-        title: "Android Privacy Data Tracking App",
-        description: "I developed an Android application which helps non-technical users analyse how apps on their phone use their sensitive data. I utilised an MVVM design pattern to write clean and testable code. Additionally, I implemnented a SpringBoot server to run Taint Analysis processes.",
-        techstack: ["Kotlin", "Java", "SpringBoot", "Jetpack"],
+        title: "In-Memory Database",
+        description: "I developed a Redis-like in-memory database supporting various data structures such as strings, lists, sets and hashes. Engineered compatibility with the RESP protocol and implemented data persistence using an append-only-file.",
+        techstack: ["Golang", "Linux",],
         link: ""
     },
+    // {
+    //     id: 3,
+    //     title: "Employee Portal",
+    //     description: "I worked with a team of 8 developers to create a Employee Portal for FDM. The project was a full-stack web application which handled authentication, submission of HR and admin management issues. I was responsible to developing the backend infrastructure and database design.",
+    //     techstack: ["Node Js", "Express", "React", "PostgreSQL"],
+    //     link: "https://github.qmul.ac.uk/ec22468/ecs506"
+    // }
     {
         id: 3,
-        title: "Employee Portal",
-        description: "I worked with a team of 8 developers to create a Employee Portal for FDM. The project was a full-stack web application which handled authentication, submission of HR and admin management issues. I was responsible to developing the backend infrastructure and database design.",
-        techstack: ["Node Js", "Express", "React", "PostgreSQL"],
-        link: "https://github.qmul.ac.uk/ec22468/ecs506"
-    }
+        title: "Med-Portal (Web Application)",
+        description: "I developed a backend RESTful API for a patient management system. The API handled basic patient records, CRUD operations and RBAC authentication. I utilised JWT tokens for secure user sessions and implemented data validation and error handling throughout.",
+        techstack: ["Golang", "Gin", "React", "Typescript", "PostgreSQL"],
+        link: ""
+    },
 
 ]
 
@@ -84,9 +98,8 @@ const Projects = () => {
                 </ul>
                 </div>
             ))}
-            {/* <div> Visit Full Project Archive </div> */}
-            </div>
-
+            <a className='full-archive-link' href='https://github.com/alyosha-bar'> Visit Full Project Archive </a>
+        </div>
     );
 }
  
