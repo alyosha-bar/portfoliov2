@@ -141,7 +141,7 @@
 }
 
 .full-archive-link::after {
-  content: "→";                      /* arrow symbol */
+  content: "→";                    
   display: inline-block;
   transition: transform 0.3s ease;
 }
@@ -149,12 +149,12 @@
 /* Hover + focus styles */
 .full-archive-link:hover,
 .full-archive-link:focus {
-  color: #005bb5;                    /* slightly darker blue */
+  color: #005bb5;                   
 }
 
 .full-archive-link:hover::after,
 .full-archive-link:focus::after {
-  transform: translateX(4px);        /* slide arrow right */
+  transform: translateX(4px);        
 }
 
 /* Optional underline effect on hover */

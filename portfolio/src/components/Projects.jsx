@@ -38,10 +38,17 @@ const Projects = () => {
     // },
     {
         id: 2,
+        title: "Real-Time Leaderboard",
+        description: "I implemented a real-time leaderboard and dashboard using Golang, Python and Websockets. I utilised Python for the data analytics service and Golang for the efficient connection. I used Docker to run both services at once.",
+        techstack: ["Golang", "Python", "Typescript", "Docker"],
+        link: "https://github.com/alyosha-bar/real-time-leaderboard"
+    },
+    {
+        id: 3,
         title: "In-Memory Database",
         description: "I developed a Redis-like in-memory database supporting various data structures such as strings, lists, sets and hashes. Engineered compatibility with the RESP protocol and implemented data persistence using an append-only-file.",
         techstack: ["Golang", "Linux",],
-        link: ""
+        link: "https://github.com/alyosha-bar/in-memory-chat"
     },
     // {
     //     id: 3,
@@ -51,11 +58,11 @@ const Projects = () => {
     //     link: "https://github.qmul.ac.uk/ec22468/ecs506"
     // }
     {
-        id: 3,
+        id: 4,
         title: "Med-Portal (Web Application)",
         description: "I developed a backend RESTful API for a patient management system. The API handled basic patient records, CRUD operations and RBAC authentication. I utilised JWT tokens for secure user sessions and implemented data validation and error handling throughout.",
         techstack: ["Golang", "Gin", "React", "Typescript", "PostgreSQL"],
-        link: ""
+        link: "https://github.com/alyosha-bar/medPortal"
     },
 
 ]
